@@ -1,0 +1,503 @@
+
+
+/****** G E N E R A L*******/
+
+$bodyColor: black;
+$h1h2Color: #ffad33;
+
+//***************************************
+
+@mixin links{
+  color: #bbff33;
+  padding: 5px 10px;
+}
+
+*{ /*lezione 51 float. con asterisco selezioniamo tutti elementi della pagina, con border box facciamo si che tutti gli elemnti ocupino il 50% (in questo caso) di spaxio, cioè anche se noi modifichiamo il padding o margin l'oggetto non va ad aumentare o calere il precentuale ma si modiffica sempre e comunque in quei 50% di pazio consentitoli */
+  box-sizing: border-box;
+}
+
+html{/*la dimensione generale per tutti i testi*/
+  font-size: 75%;
+}
+
+img{/*cosi tutte le immagini in tutte le pagine si adatteranno automaticamente alla larghezza dello schermo*/
+  width: 100%;
+}
+
+body{
+  background-color: $bodyColor;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;/*dimensione testo nel body*/
+
+
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.clearfix::after{/*lezione 52 clearfix. in pochi parole uniamo tutti gli oggetti nella sezione gallery in un unico oggetto*/
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/****** H E A D E R ******/
+
+
+header{
+  text-align: center;
+  background-color: $bodyColor;
+
+}
+
+/************** H E A D E R  *****************/
+
+#magictext h1{
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  color: $h1h2Color;
+}
+
+#magictext h2{
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: $h1h2Color;
+}
+
+/****** N A V ******/
+
+#nav{
+  list-style-type: none;/*convertiamo una lista ordinata in una semplice (togliamo le paline su lato sinistra)*/
+  margin: 0 auto;
+
+  li{
+    display: inline-block;
+    padding: 7px 7px;
+    margin: 0 30px;
+  }
+
+  li a{
+    color: #cc7a00;
+    font-family: 'Kaushan Script', cursive;/*stile di testo*/
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+.active{/*con questa classe il pulsante del menu rimane sempre acceso e dimostra in che pagina mi trovo*/
+  background: #663d00;/*il colore dello sfondo quando passi con mous*/
+  border-radius: 7px;/*per arotondare gli angoli*/
+}
+
+/***** M A I N E *****/
+
+.mainContainer{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;/*cosi lo spazio suopra e sotto è "0" e destra e sinistra è di 5px*/
+}
+
+#main .fotoLogo{
+  padding-top: 3px;
+  width: 100%;
+  height: 230px;
+}
+
+#gallery{/*diamo spazio sopra e sotto le foto*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  img{/*in questo modo la foto ocupa tutto lo spazzio del container*/
+    width: 100%;/*con "width" 100% lefoto ocupano spazio giusto dal bordo al bordo*/
+
+  }
+}
+
+#gallery .item{/*con "gallery .item" rievochiamo ID gallery + classe .item*/
+  float: left;/*ci permette di decidere il posizionamento di un singolo oggetto sulla pagina(lezione 51)*/
+  width: 50%;/*con questo facciamo in modo che il contenitore ocupa solo 50% dello spazio*/
+  padding: 15px;/*per distanziare le immagini tra di loro*/
+  transition: .55s;/*applichiamo un ritardo d'azzione*/
+}
+
+
+.ricetta{
+  color: #ffff99;
+}
+
+.item a{
+  text-decoration: none;
+  color: #ffff99;
+  font-size: 20px;
+}
+
+.caption p{/*nome riccete*/
+  font-family: 'Kalam', cursive;
+  margin-top: 0;
+  text-align: center;
+}
+
+/******* M E N U *******/
+
+.item1{/*riccette della pagina dolce / salato*/
+  margin: 20px auto;
+
+  padding: 5px;
+  width: 450px;
+
+}
+
+#gallery .item1{/*con "gallery .item" rievochiamo ID gallery + classe .item*/
+  float: left;/*ci permette di decidere il posizionamento di un singolo oggetto sulla pagina(lezione 51)*/
+  width: 50%;/*con questo facciamo in modo che il contenitore ocupa solo 50% dello spazio*/
+  padding: 15px;/*per distanziare le immagini tra di loro*/
+}
+
+#gallery .item1:nth-child(2n + 1){/*utiliziamo la psseodo classe ** nth-child ** per fare si che tutti gli elementi rimangono all loro posto, che siano piu lunghi o piu corti vengono tutti aliniati assinistra(in questo caso) */
+  clear: left;
+}
+
+.picture{/*centriamo le foto di menu*/
+  text-align: center;
+}
+
+:target {/*evidinzia il link dell'altra pagina su qui hai cliccato*/
+  border: 2px solid #66cc00;
+  background-color: #604020;
+}
+
+
+
+/***** F O O T E R *****/
+
+footer  {
+  .myLogo{
+    text-align: center;
+    margin: 5px 50px 20px 50px;
+    img{
+      width: 200px;
+    }
+  }
+}
+
+
+#footerBox{
+  clear: both;/*questo comando esola "FOOTER" da gli "FLOAT", cioè footer rimane sempre al suo posto*/
+  //float: right;
+  width: 100%;
+  border-top: 1px solid red;
+  background-color: black;
+  font-size: 13px;/*dimensione del testo*/
+  padding: 10px 0;/*definisco la ampiezza del box*/
+  .footerText{
+    font-family: 'Comfortaa', cursive;
+    font-size: 11px;
+    color: #ff9900;
+    text-align: center;
+    .material-icons{/*mini icona di fianco al num di cell*/
+    font-size: 13px;
+    }
+    .text1{
+      padding-left: 14px;
+    }
+  }
+  .footerLink{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -50px;
+    padding: 5px;
+    .links{
+      @include links;
+      a{
+        color: #00b3b3;
+        padding-left: 3px;
+      }
+    }
+    img{/*mini icona di fianco al num di cell*/
+    float: left;
+    width: 17px;
+    }
+  }
+  .links a:hover{/*pseudo class. qando passiamo con mous suopra cambia colore*/
+    color: #66ffff;
+    text-decoration: underline;
+  }
+}
+
+
+
+/************ beck to up button ******************/
+
+.btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: #2eb82e;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s;
+
+}
+.btn:hover{
+    height: 80px;
+}
+
+
+              /**********************************************
+            **** M E D I A   Q U E R Y S   LE Z I O N E 55 ****
+              ============= R E S P O N S I V E ============
+              **********************************************/
+@media only screen and (min-width: 768px) {/*PER SCHERMI PIU DI 768*/
+
+        /***** M A I N E *****/
+
+        #gallery .item{/*con "gallery .item" rievochiamo ID gallery + classe .item*/
+        width: 33.3333%;/*con questo facciamo in modo che il contenitore ocupa solo 50% dello spazio*/
+      }
+
+      #gallery .item:nth-child(3n + 1){/*serve in caso quando alcuni elementi sono piu grandi dei altri, in questo modo gli elementi rispettino il loro posto*/
+      clear: left;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {/*PER GLI SCHERMI DI PC*/
+
+      /****** N A V ******/
+      #nav li a{/*mentre passi suopra con il mouse il link cambia il colore*/
+        transition: background .3s;/*cosi apparizione dello losfondo di pulsanti è piu morbido, unpo piu lento*/
+        padding: 5px 50px;/*con 50px aumento la distanza tra i pulsanti*/
+      }
+
+      #nav li a:hover{/*mentre passi suopra con il mouse il link cambia il colore*/
+        background-color: #663d00;
+        border-radius: 7px;/*per arotondare gli angoli*/
+        transition: .55s;/*applichiamo un ritardo d'azzione*/
+      }
+
+      #gallery .item{/*con "gallery .item" rievochiamo ID gallery + classe .item*/
+        transition: .5s;/*applichiamo un ritardo d'azzione*/
+      }
+
+/******* M E N U *******/
+
+      #gallery .item1{
+        transition: .3s;/*applichiamo un ritardo d'azzione*/
+      }
+
+      #gallery .item1:hover{
+        border: 2px solid #66cc00;
+        background: black;
+        transform: scale(1.2);/*facciamo in modo che con passaggio di mouse suopra oggetto si ingrandisce*/
+        transition: .3s;/*applichiamo un ritardo d'azzione*/
+        opacity: .8;/*livello di trasparenza*/
+      }
+
+      #gallery .item:hover {/*passando col mouse suopra cambia colore*/
+        background-color: #cc7a00;
+        border-radius: 7px;/*per arotondare gli angoli*/
+      }
+
+      /******* R I C E T T E *******/
+
+}
+
+@media only screen and (max-width: 767px) {/*PER GLI SCHERMI PIU PICCOLI DI 767*/
+
+/************** H E A D E R  *****************/
+
+#magictext h1{
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 27px;
+  color: #ffad33;
+}
+
+#magictext h2{
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  color: #ffad33;
+}
+
+/****** N A V ******/
+
+#nav{
+  list-style-type: none;/*convertiamo una lista ordinata in una semplice (togliamo le paline su lato sinistra)*/
+  margin: 0 auto;
+  margin-left: -50px;/*per centrare il menu */
+}
+
+#nav li{
+  display: inline-block;
+  padding: 7px 7px;
+  margin: 0 70px;
+}
+
+#nav li a{
+  color: #cc7a00;
+  font-size: 17px;
+}
+
+#nav .active{/*con questa classe il pulsante del menu rimane sempre acceso e dimostra in che pagina mi trovo*/
+  padding: 3px 7px;
+  background: #663d00;/*il colore dello sfondo quando passi con mous*/
+  border-radius: 7px;/*per arotondare gli angoli*/
+}
+
+
+      /****** M A I N ******/
+
+  #main .fotoLogo{
+    width: 100%;
+    height: 100px;
+  }
+
+    /**************GALLERY**************/
+  #gallery .item:nth-child(2n + 1){/*serve in caso quando alcuni elementi sono piu grandi dei altri, in questo modo gli elementi rispettino il loro posto*/
+    clear: left;
+  }
+
+#gallery .caption p{
+  font-family: 'Kalam', cursive;
+  font-size: 12px;
+}
+
+#gallery .item{
+  padding: 5px;
+}
+
+/************ beck to up button ******************/
+
+  .btn{
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      width: 25px;
+      height: 25px;
+      font-size: 1rem;/*dimensioni del testo dentro*/
+      background-color: #2eb82e;
+      color: black;/*colore del testo dentro*/
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s;
+      opacity: .5;
+  }
+  .btn:hover{
+      height: 25px;
+  }
+
+  /***** F O O T E R *****/
+
+  footer  {
+    .myLogo{
+      text-align: center;
+      margin-top: 5px;
+      img{
+        width: 200px;
+      }
+    }
+  }
+
+  #footerBox{
+    clear: both;/*questo comando esola "FOOTER" da gli "FLOAT", cioè footer rimane sempre al suo posto*/
+    //float: right;
+    width: 100%;
+    border-top: 1px solid red;
+    background-color: black;
+    font-size: 5px;/*dimensione del testo*/
+    padding: 10px 0;/*definisco la ampiezza del box*/
+    .footerText{
+      font-family: 'Comfortaa', cursive;
+      font-size: 10px;
+      color: #ff9900;
+      text-align: center;
+      .material-icons{/*mini icona di fianco al num di cell*/
+      }
+      .text1{
+        padding-right: 35px;
+      }
+    }
+    .footerLink{
+      width: 100%;
+      text-align: center;
+      margin-left: 0px;
+      padding: 5px;
+      .links{
+        color: #bbff33;
+        padding: 3px 7px;
+        a{
+          font-size: 11px;
+          color: #00cccc;
+          padding-left: 3px;
+        }
+      }
+      img{/*mini icona di fianco al num di cell*/
+      float: left;
+      width: 12px;
+      }
+    }
+  }
+}
+
+  /*************************************
+     ======= K E Y F R A M E S =======
+    ======= A N I M A T I O N S =======
+  *************************************/
+
+  /****************************
+  ******* H E A D E R *********/
+
+  #magictext h1{/*fattore scatenante. nel **animation** prima di tutto devi scrivere il nome che hai dato alla tua animazione nel **keyframes** */
+  opacity: 0;
+  animation-name: title1;
+  animation-duration: 2s;
+  animation-delay: .4s;/*il tempo di ritardo, dopo quanto tempo l'animazione deve partire*/
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  }
+@keyframes title1 {
+
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#magictext h2{/*fattore scatenante. nel **animation** prima di tutto devi scrivere il nome che hai dato alla tua animazione nel **keyframes** */
+  opacity: 0;
+  animation-name: title2;
+  animation-duration: 2s;
+  animation-delay: .9s;/*il tempo di ritardo, dopo quanto tempo l'animazione deve partire*/
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  }
+
+@keyframes title2 {
+
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}

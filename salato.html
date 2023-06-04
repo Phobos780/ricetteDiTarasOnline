@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta name="google-site-verification" content="tFRMh72TTAVW-chVQBCWOfB2OJhqTJirzRm-7mbRaFY" />
+
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X5FXCNGET"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0X5FXCNGET');
+      </script>
+
+      <meta charset="utf-8">
+      <meta name="description" content="Questo è una racolta di ricette, di Taras Mykhaylovskyy e i suoi amici. Le ricette sono semplici a portata di tutti">
+      <meta name="author" content="Taras Mykhaylovskyy">
+      <meta name="keywords" content="Ricette, Taras, Mykhaylovskyy, Ayako, Inanami, ricetta Ucraina, Ricette Giappone, Ricette italia, Ricette russia, Ricetta vera di spiedini russi, cucina">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Ricette di salato</title>
+
+      <!--******* F A V I C O N ********-->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="images/favicon/favicon.ico">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--serve per la console. per vedere come viene sugli smartphone-->
+
+        <!--*** C S S ***-->
+      <link rel="stylesheet" href="css/normalize.css"><!--colegamento con normalize.css-->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!--BUTTON UP-->
+      <link rel="stylesheet" href="S:\font awsome\fontawesome-free-5.12.1-web\css\all.css">
+
+            <!--*** S T I L I   D I   T E S T O  ***-->
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"><!--stile testo titolo-->
+      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"><!--stile testo del menu nav-->
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dancing+Script&display=swap" rel="stylesheet"><!--stile testo footer-->
+
+        <!--****** L E   M I N I   I C O N E *******-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+      </head>
+  <body>
+    <!--*** B U T T O N   U P ***-->
+  <button class="btn">up<i class="fa fa-arrow-up"></i></button>
+  <script>
+      let btn= document.querySelector('.btn');
+      btn.addEventListener('click',function(){
+
+          window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth"
+          })
+      })
+  </script>
+
+  <!-- ***** T I T O L O ****** -->
+<header >
+    <section id="magictext">
+      <div class="magicTitle">
+        <h1>Le ricette di Taras e i suoi Amici ,</h1>
+        <h2>dolci e salate .</h2>
+      </div>
+    </section>
+
+
+    <!--***** M E N U   N A V *****-->
+    <ul id="nav">
+      <li><a href="dolce.html">RICETTE DOLCI</a></li>
+      <li><a href="index.html">MENU PRINCIPALE</a></li>
+      <li><a href="salato.html" class="active">RICETTE SALATE</a></li>
+    </ul>
+
+</header>
+
+    <!--***** M A I N E *****-->
+    <main id="main">
+      <img class="fotoLogo" src="images/picHeader.jpg" alt="logo">
+      <div class="mainContainer">
+        <section id="gallery" class="clearfix"><!--con "section" possiamo inserire le varie sezzioni al interno della pagina-->
+
+          <!--*** RICETTA 1 ***-->
+          <div  id="RIC1" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food1.jpg" alt="Spaghetti alla carbonara">
+              </div>
+              <div class="ricetta">
+                  <h3>Spaghetti alla carbonara,come li faccio io</h3>
+                  <p>ingredienti:</p>
+                  <ul>
+                    <li>500gr di spaghetti.</li>
+                    <li>4 uova</li>
+                    <li>150gr di pancetta</li>
+                    <li>1-2 cipolle</li>
+                    <li>100gr di parmigiano</li>
+                    <li>pepe nero</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>tagliare a dadini la pancetta</li>
+                    <li>soffriggere la pancetta a piacere</li>
+                    <li>quando la pancetta è quasi pronta, aggiungere la cipolla tagliata fine e soffriggere tutto</li>
+                    <li>sbattere le uova con il parmigiano grattugiato e pepe macinato</li>
+                    <li>scolare la pasta e saltare in padella col soffritto</li>
+                    <li>versare il composto d'uova e grana sulla pasta e mescolare per bene a fuoco spento.</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+
+          <!--*** RICETTA 2 ***-->
+          <div  id="RIC2" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food2.jpg" alt="Gnocchi allo speck">
+              </div>
+              <div class="ricetta">
+                  <h3>Gnocchi allo speck</h3>
+                  <p>ingredienti(per 3 porzioni):</p>
+                  <ul>
+                    <li>500g di gnocchi precotti</li>
+                    <li>100g di speck affettato</li>
+                    <li>una cipolla medio-grande</li>
+                    <li>300g di latte</li>
+                    <li>sale, curcuma</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>pelare e tagliare la cipolla a dadini</li>
+                    <li>rosolare la cipolla in padella</li>
+                    <li>tagliare lo speck a sfilaccini</li>
+                    <li>aggiungere speck in padella con la cipolla soffritta</li>
+                    <li>mescolare tutto per bene, ma non soffriggere lo speck, scaldarlo appena un po'</li>
+                    <li>aggiungere gli gnocchi precotti, il latte e il sale</li>
+                    <li>mescolare tutto per bene e lasciare a fuoco lento per 5min</li>
+                    <li>mescolare di nuovo aggiungendo la curcuma a piacere</li>
+                    <li>lasciare tutto a fuoco lento per un altro paio di minuti</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+
+          <!--*** RICETTA 3 ***-->
+          <div  id="RIC3" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food4.jpg" alt="Spiedini Russi">
+              </div>
+              <div class="ricetta">
+                  <h3>Spiedini Russi(shashlek), una ricetta Ucraina</h3>
+                  <p>ingridienti(per 4 persone):</p>
+                  <ul>
+                    <li>Un chilo di coppa di suino</li>
+                    <li>500g di cipolla dorata(ne' grande ne' piccola)</li>
+                    <li>Sale</li>
+                    <li>Aceto di mele/vino 25ml</li>
+                    <li>Pepe nero macinato</li>
+                  </ul>
+                  <p>Preparazione(marinatura):</p>
+                  <ol>
+                    <li>tagliare la carne a cubetti, più o meno 5 x 5cm</li>
+                    <li>mettere i cubetti di carne in una bowl</li>
+                    <li>aggiungere aceto + sale + pepe e mescolare il tutto per bene</li>
+                    <li>tagliare la cipolla a rondelle, di spessore di circa 5mm</li>
+                    <li>in un contenitore rotondo di vetro (preferibilmente) coprire il fondo con le rondelle di cipolla, completamente</li>
+                    <li>mettere un altro pizzico di sale sulla cipolla (non tanto)</li>
+                    <li>coprire la cipolla, con cubetti di carne, incastrandoli uno ad uno come un puzzle</li>
+                    <li>ricoprire completamente la carne con le rondelle di cipolla</li>
+                    <li>mettere così tutta la carne a strati con la cipolla (aggiungendo sempre un pizzico di sale sulla cipolla), il primo e ultimo strato, comunque deve essere di cipolla</li>
+                    <li>coprire il tutto con un coperchio/piatto che però entri nel contenitore, che sia un pò più piccolo del contenitore</li>
+                    <li>spingere forte sopra il coperchio, poi lasciare a temperatura ambiente fino al giorno dopo. per circa 20ore.</li>
+                  </ol>
+                  <p>Preparazione(cottura):</p>
+                  <ol>
+                    <li>preparare la carbonella o la brace </li>
+                    <li>preparare gli spiedini mettendo una rondella di cipolla, dalla pentola, + un pezzo di carne e di nuovo la cipolla e cosi via </li>
+                    <li>mettere gli spiedini a cuocersi, non troppo lontano dalla brace</li>
+                    <li>girare ogni tanto</li>
+                    <li>una volta che la carne ha preso colore è pronto!</li>
+                    <li>Buon appetito!</li>
+
+                  </ol>
+                </div>
+              </a>
+          </div>
+
+          <!--*** RICETTA 4 ***-->
+          <div  id="RIC6" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food5.jpg" alt="Grano saraceno">
+              </div>
+              <div class="ricetta">
+                  <h3>Grano saraceno, tostato, ricetta Ukraina</h3>
+                  <p>ingredienti:</p>
+                  <ul>
+                    <li>100gr di grano saraceno.</li>
+                    <li>2 spicchi d'aglio</li>
+                    <li>Olio d'oliva</li>
+                    <li>Un po' di parmigiano</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>mettere il grano saraceno in una pentola antiaderente</li>
+                    <li>riempire con acqua un dito sopra il grano</li>
+                    <li>mettere pocchissimo sale(considera che l'acqua non viene scolata)</li>
+                    <li>bollire a fuoco leggero finchè l'acqua non evapora del tutto</li>
+                    <li>mescolare ogni tanto</li>
+                    <li>una volta pronto il grano, schiacciare dentro l'aglio</li>
+                    <li>mettere nel piatto, grattuggiare un po' grana + olio d'oliva</li>
+                    <li>buon appetito.</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+          <!--*** RICETTA 5 ***-->
+          <div  id="RIC4" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food6.jpg" alt="Insalata di cetrioli">
+              </div>
+              <div class="ricetta">
+                  <h3>Insalata di cetrioli</h3>
+                  <p>ingridienti:</p>
+                  <ul>
+                    <li>Un cetriolo fresco piccolo.</li>
+                    <li>Mezzo finocchio</li>
+                    <li>3-4 ravanelli</li>
+                    <li>2 uova</li>
+                    <li>2-3 cipollotti verdi</li>
+                    <li>Yogurt greco (ricetta light) altrimenti maionese</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>prima di tutto tagliare i cipollotti a rondelle fine </li>
+                    <li>mettere il sale tanto quanto meterestte in tutta l'insalata</li>
+                    <li>mescolare per bene la cipolla con il sale e lasciare riposare (cio' rende la cipolla più dolce, dopo non brucia)</li>
+                    <li>bollire uova 7-8min</li>
+                    <li>tagliare a pezzettini (come più vi piace) il resto degli ingredienti, comprese le uova</li>
+                    <li>aggiungere lo yogurt greco (o maionese) e mescolare</li>
+                    <li>infine aggiungere la cipolla tagliata precedentemente</li>
+                    <li>mescolare tutto. Si sposa molto bene con le patate bollite o il grano saraceno (vedi la ricetta del Grano saraceno)</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+          <!--*** RICETTA 6 ***-->
+          <div  id="RIC7" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food7.jpg" alt="Insalata Russa">
+              </div>
+              <div class="ricetta">
+                  <h3>Insalata Russa</h3>
+                  <p>ingredienti(per 10 porzioni):</p>
+                  <ul>
+                    <li>Patate - 650g.</li>
+                    <li>Carote - 450g</li>
+                    <li>Cetrioli sott'aceto - 200g</li>
+                    <li>Piselli cotti al vapore - barattolo piccolo (150g)</li>
+                    <li>6 uova</li>
+                    <li>Mortadella - 500g</li>
+                    <li>Maionese - 250g</li>
+                    <li>Sale - a piacere</li>
+                    <li>pepe nero</li>
+                    <li>una cipolla</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>lessare le patate, le carote e le uova fino a che siano ben cotte</li>
+                    <li>prima di tutto la tagliare a cubetti cipolla e mettere tanto sale quanto basta per tutta l'insalata</li>
+                    <li>lasciare la cipolla con il sale a riposare </li>
+                    <li>tagliare a cubetti le patate, le carote, le uova, i cetrioli e la mortadella </li>
+                    <li>mescolare tutti gli ingredienti con la maionese, aggiungendo anche i piselli e la cipolla</li>
+                    <li>servire freddo</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+          <!--*** RICETTA 7 ***-->
+          <div  id="RIC8" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food8.jpg" alt="zuppa Borch Ucraino">
+              </div>
+              <div class="ricetta">
+                  <h3>Borch Ucraino</h3>
+                  <p>ingredienti(per 6 porzioni):</p>
+                  <ul>
+                    <li>Carne(a tua scelta) - 500g.</li>
+                    <li>Patate - 400g</li>
+                    <li>Verza bianca - 400g</li>
+                    <li>Rapa rossa -  250g</li>
+                    <li>Passata di pomodoro - 250g</li>
+                    <li>Una cipolla - media</li>
+                    <li>Foglia di alloro</li>
+                    <li>Un barattolo di fagioli cotti al vapore</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>bollire la carne fino a renderla semi cotta a fuoco lento</li>
+                    <li>aggiungere in pentola patate e carote (le patate tagliate a piacere, le carote a rondelle) bollire per 15min a fuoco lento</li>
+                    <li>preparare un soffritto di cipolla, barbabietola rossa e sugo di pomodoro</li>
+                    <li>aggiungere in pentola la verza affettata finemente</li>
+                    <li>aggiungere il soffritto e i fagioli nella pentola e lasciare a fuoco lento per altri 5min</li>
+                    <li>servire caldo con un cucchiaio di panna acida o yogurt greco nat.</li>
+                    <li>per gli amanti dell'aglio si può aggiungere uno spicchio tagliato fine direttamente nel piatto</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+          <!--*** RICETTA 8 ***-->
+          <div  id="RIC9" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food9.jpg" alt="polpette Tori no Karaage">
+              </div>
+              <div class="ricetta">
+                  <h3>Tori no Karaage</h3>
+                  <p>ingredienti(per 3 porzioni):</p>
+                  <ul>
+                    <li>Sovracoscia di pollo disossata - 500g.</li>
+                    <li>2-4 spicchi d'aglio</li>
+                    <li>4 centimetri di radice di zenzero fresco</li>
+                    <li>Salsa di soia</li>
+                    <li>Olio di sesamo</li>
+                    <li>Farina 00</li>
+                    <li>Fecola di patate</li>
+                    <li>Olio da friggere</li>
+                    <li>Sale pepe</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>tagliare il pollo a bocconcini, 4x4 centimetri circa</li>
+                    <li>mettere a marinare il pollo (minimo 90 min, max una notte) con lo zenzero grattugiato, l'aglio tritato, olio di sesamo e salsa di soia</li>
+                    <li>scolare il liquido rimanente</li>
+                    <li>mescolare il pollo con la farina e la fecola di patate</li>
+                    <li>scaldare l'olio da friggere a 160°</li>
+                    <li>friggere il pollo fino quando diventa leggermente dorato, dopo aumentare la temperatura a circa 180° e finire di friggere</li>
+                    <li>scolare l'olio, servire caldo, con qualche spicchio di limone</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+          <!--*** RICETTA 9 ***-->
+          <div  id="RIC11" class="item1">
+            <a>
+              <div class="picture">
+                <img class="fotoRicetta" src="images/food11.jpg" alt="piatto di carbonara">
+              </div>
+                <div class="ricetta">
+                  <h3>Katlete <br> o polpette di carne.</h3>
+                  <p>ingredienti (per 6 porzioni):</p>
+                  <ul>
+                    <li>Carne macinata - 500g.</li>
+                    <li>Un uovo</li>
+                    <li>Una cipolla</li>
+                    <li>Pane bianco(anche secco) - 80g circa</li>
+                    <li>Latte - 50g</li>
+                    <li>Olio da friggere</li>
+                    <li>Sale pepe</li>
+                  </ul>
+                  <p>Preparazione:</p>
+                  <ol>
+                    <li>mettere a mollo pane nel latte</li>
+                    <li>tritare la cipolla</li>
+                    <li>amalgamare per bene carne con cipolla e pane</li>
+                    <li>aggiungere sale pepe a piacere</li>
+                    <li>fare le polpette piatte, non palline, di circa 10centimetri e di spessore 3 centimetri</li>
+                    <li>versare olio da friggere in padella (non tantissimo, un dito circa) e scaldare per bene</li>
+                    <li>mettere le polpette in padella e friggere finche non divdiventano di colore marroncino</li>
+                    <li>servire calde con un contorno a piacere. Vanno molto bene con purea</li>
+                  </ol>
+                </div>
+              </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--***** F O O T E R *****-->
+    <footer>
+      <section id="footerBox">
+        <div class="footerLink">
+          <div class="links">
+            <img src="https://img.icons8.com/material-outlined/24/fa314a/gmail-login.png"/><a href="mailto:taras.m780@gmail.com">taras.m780@gmail.com</a>
+          </div>
+          <div class="links">
+            <img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/><a href="https://www.linkedin.com/in/taras-sviluppatore-frontend/">my LinkedIn</a>
+          </div>
+          <div class="links">
+            <img src="https://img.icons8.com/officexs/16/000000/skype.png"/><a href="skype:Taras Mykhaylovskyy">my Skype</a>
+          </div>
+        </div>
+        <div class="footerText">
+          <p class="text1"><span class="material-icons">copyright</span> 2021 Taras Mykhaylovskyy. Grazie per la visita. </p>
+        </div>
+      </section>
+      <div class="myLogo">
+        <img src="images/MyLogo.jpeg" alt="image of logotype">
+      </div>
+    </footer>
+  </body>
+</html>
